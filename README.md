@@ -1,4 +1,3 @@
-
 # 🌐 Hyperlocal Community Platform
 
 [![PHP](https://img.shields.io/badge/PHP-7.4%2B-blue?logo=php)](https://www.php.net/)
@@ -84,7 +83,7 @@ LICENSE            # License info
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/codedbydumi/hyperlocal-community-platform.git````
+   git clone https://github.com/codedbydumi/hyperlocal-community-platform.git ````
 
 2. Import the SQL database from `/database`
 3. Configure `/config/db.php` with your MySQL credentials
@@ -94,9 +93,26 @@ LICENSE            # License info
 
 ## 🖼️ Screenshots & Demo
 
-**Screenshots** and **video guidance** are available in the `assets/` folder.
+Screenshots of the platform are available in the `assets/` folder.
 
-> 🖥️ Live deployment: **Coming Soon**
+### 📌 Sample Screens
+
+* 🏠 **Home Page**
+  *(Insert image: `assets/homepage.png`)*
+
+* 📋 **Item Listing Page**
+  *(Insert image: `assets/item-listing.png`)*
+
+* 💬 **Messaging Interface**
+  *(Insert image: `assets/chat.png`)*
+
+* 🧹 **Service Booking Page**
+  *(Insert image: `assets/booking.png`)*
+
+* 📢 **Community Feed**
+  *(Insert image: `assets/community-feed.png`)*
+
+> 🖥️ **Live deployment**: **Coming Soon**
 
 ---
 
@@ -130,4 +146,7 @@ This project is licensed under the [MIT License](LICENSE).
 ## 👨‍💻 Author
 
 Made with ❤️ by **codedbydumi**
+
+```
+
 
