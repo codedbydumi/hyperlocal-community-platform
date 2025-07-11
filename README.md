@@ -101,16 +101,16 @@ Screenshots of the platform are available in the `assets/` folder.
   *(Insert image: `assets/homepage.png`)*
 
 * 📋 **Item Listing Page**
-  *(Insert image: `assets/item-listing.png`)*
+  *(image: `assets/item-listing.png`)*
 
 * 💬 **Messaging Interface**
-  *(Insert image: `assets/chat.png`)*
+  *(image: `assets/chat.png`)*
 
 * 🧹 **Service Booking Page**
-  *(Insert image: `assets/booking.png`)*
+  *(image: `assets/booking.png`)*
 
 * 📢 **Community Feed**
-  *(Insert image: `assets/community-feed.png`)*
+  *(image: `assets/community-feed.png`)* // comming soon
 
 > 🖥️ **Live deployment**: **Coming Soon**
 
@@ -147,6 +147,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 Made with ❤️ by **codedbydumi**
 
-```
 
 
