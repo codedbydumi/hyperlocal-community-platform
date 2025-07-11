@@ -35,8 +35,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $description = $conn->real_escape_string($description); // Sanitize description
     $email = $conn->real_escape_string($userEmail); // Sanitize email
 
-    // Define the SQL query to insert group data
-    $sql = "INSERT INTO groups (name, description, user_email) VALUES (?, ?, ?)";
+    // Define the SQL query to insert group data - FIXED: Added backticks around table name
+    $sql = "INSERT INTO `groups` (name, description, user_email) VALUES (?, ?, ?)";
 
     if ($stmt = $conn->prepare($sql)) {
         // Bind the parameters

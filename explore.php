@@ -18,12 +18,8 @@ $categoryFilter = isset($_GET['category']) ? $_GET['category'] : '';
 $itemTypeFilter = isset($_GET['item_type']) ? $_GET['item_type'] : '';
 $searchTerm = isset($_GET['search']) ? trim($_GET['search']) : '';
 
-// Build the SQL query based on filters
-$sql = "SELECT listings.*, 
-               COALESCE(AVG(ratings.rating), 0) AS avg_rating 
-        FROM listings
-        LEFT JOIN ratings ON listings.id = ratings.product_id 
-        WHERE 1=1";
+// Build the SQL query based on filters - removed ratings join and avg_rating
+$sql = "SELECT * FROM listings WHERE 1=1";
 
 if (!empty($districtFilter)) {
     $sql .= " AND district = '" . $conn->real_escape_string($districtFilter) . "'";
@@ -43,8 +39,7 @@ if (!empty($searchTerm)) {
     $sql .= " AND (name LIKE '%$escapedSearch%' OR description LIKE '%$escapedSearch%')";
 }
 
-$sql .= " GROUP BY listings.id"; // Group by product to calculate average rating
-
+// Removed GROUP BY clause since we're no longer calculating ratings
 $result = $conn->query($sql);
 ?>
 
