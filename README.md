@@ -1,4 +1,5 @@
 
+```markdown
 # 🌐 Hyperlocal Community Platform
 
 <p align="center">
@@ -22,7 +23,7 @@ Its **core functionality is a Rent Item & Services system**, allowing users to r
 - 🧑‍🏫 Private Tutoring  
 - 🐕 Dog Walking  
 
-In addition to renting, users can chat in real-time, report issues, manage groups, and share neighborhood updates — all in one place.
+In addition to rentals, users can chat in real-time, report issues, manage groups, and share neighborhood updates — all in one place.
 
 ---
 
@@ -149,5 +150,7 @@ See the [LICENSE](LICENSE) file for full details.
 Feel free to connect or reach out for collaboration, improvements, or ideas!
 
 ---
+
+```
 
 
