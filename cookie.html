@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Policy | Neighborhood Connect</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .logo {
+            font-weight: 700;
+            color: #3366cc;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .search-container {
+            display: flex;
+            flex-grow: 1;
+            max-width: 500px;
+            margin: 0 20px;
+            position: relative;
+        }
+        .search-container input {
+            width: 100%;
+            padding: 10px 15px;
+            border-radius: 20px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+            background-color: #f5f5f5;
+        }
+        .search-container .mic-icon, .search-container .plus-icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #777;
+            cursor: pointer;
+        }
+        .search-container .plus-icon {
+            right: -30px;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 25px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        .login-btn {
+            background-color: #3366cc;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .policy-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 28px;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #3366cc;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        h3 {
+            color: #2c3e50;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        ul, ol {
+            margin-bottom: 15px;
+            margin-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 5px;
+        }
+        
+        .last-updated {
+            font-style: italic;
+            color: #777;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f0f5ff;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .cookie-preferences {
+            background-color: #f0f5ff;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 30px 0;
+        }
+        
+        .button {
+            display: inline-block;
+            background-color: #3366cc;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 15px;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .secondary-button {
+            background-color: #f0f5ff;
+            color: #3366cc;
+            border: 1px solid #3366cc;
+            margin-right: 10px;
+        }
+        
+        footer {
+            background-color: #3366cc;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 60px;
+        }
+        
+        footer .footer-links {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        footer .footer-links a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        
+        footer .footer-links a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 15px;
+            }
+            
+            .search-container {
+                margin: 15px 0;
+                max-width: 100%;
+            }
+            
+            nav ul {
+                margin-top: 15px;
+                width: 100%;
+                justify-content: space-between;
+            }
+            
+            nav ul li {
+                margin: 0;
+            }
+            
+            .policy-container {
+                padding: 25px;
+            }
+            
+            table {
+                font-size: 14px;
+            }
+            
+            th, td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Hyperlocal</a>
+        <div class="search-container">
+            <input type="text" placeholder="Search for tools, skills or community help...">
+            <span class="mic-icon"></span>
+            <span class="plus-icon"></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="rented_item.php">rent Item</a></li>
+                <li><a href="viewgroups.php">Community</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="policy-container">
+            <h1>Cookie Policy</h1>
+            <p class="last-updated">Last Updated: March 10, 2025</p>
+            
+            <section>
+                <p>This Cookie Policy explains how Neighborhood Connect ("we", "us", or "our") uses cookies and similar technologies on our website and platform (collectively, the "Platform"). This Cookie Policy should be read alongside our <a href="privacy-policy.html">Privacy Policy</a>, which explains how we use personal information.</p>
+                
+                <div class="cookie-preferences">
+                    <h3>Manage Cookie Preferences</h3>
+                    <p>You can choose which types of cookies you allow when using our Platform. Essential cookies cannot be disabled as they are necessary for the Platform to function properly.</p>
+                    <button id="cookie-preferences-btn" class="button">Cookie Settings</button>
+                </div>
+            </section>
+            
+            <section>
+                <h2>What Are Cookies?</h2>
+                <p>Cookies are small text files that are stored on your device (computer, tablet, or mobile) when you visit websites. They are widely used to make websites work more efficiently, provide a better user experience, and provide information to the owners of the site. Cookies cannot harm your device or access other information on your device.</p>
+                <p>In addition to cookies, we may use other similar technologies like web beacons, pixels, local storage, and device identifiers to collect information about how you use our Platform.</p>
+            </section>
+            
+            <section>
+                <h2>Types of Cookies We Use</h2>
+                <p>We use the following types of cookies on our Platform:</p>
+                
+                <h3>Essential Cookies</h3>
+                <p>These cookies are necessary for the Platform to function properly. They enable core functionality such as security, account login, and remembering your preferences. You cannot disable these cookies in our systems.</p>
+                
+                <h3>Performance and Analytics Cookies</h3>
+                <p>These cookies collect information about how visitors use our Platform, such as which pages they visit most often and if they get error messages. We use this information to improve our Platform and understand how users interact with it.</p>
+                
+                <h3>Functionality Cookies</h3>
+                <p>These cookies enable enhanced functionality and personalization, such as remembering your language preferences or location. They may be set by us or by third-party providers whose services we have added to our pages.</p>
+                
+                <h3>Targeting and Advertising Cookies</h3>
+                <p>These cookies may be set on our Platform by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant advertisements on other sites.</p>
+                
+                <h3>Social Media Cookies</h3>
+                <p>These cookies are set by social media services that we have added to the Platform. They enable you to share our content with your friends and networks. These cookies can track your browser across other sites and build a profile of your interests.</p>
+            </section>
+            
+            <section>
+                <h2>Specific Cookies We Use</h2>
+                <p>Below is a list of the main cookies we use on our Platform:</p>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cookie Name</th>
+                            <th>Type</th>
+                            <th>Duration</th>
+                            <th>Purpose</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>nc_session</td>
+                            <td>Essential</td>
+                            <td>Session</td>
+                            <td>Maintains your login session</td>
+                        </tr>
+                        <tr>
+                            <td>nc_csrf</td>
+                            <td>Essential</td>
+                            <td>Session</td>
+                            <td>Protects against Cross-Site Request Forgery attacks</td>
+                        </tr>
+                        <tr>
+                            <td>nc_preferences</td>
+                            <td>Functionality</td>
+                            <td>1 year</td>
+                            <td>Stores your platform preferences</td>
+                        </tr>
+                        <tr>
+                            <td>nc_location</td>
+                            <td>Functionality</td>
+                            <td>30 days</td>
+                            <td>Stores your neighborhood location</td>
+                        </tr>
+                        <tr>
+                            <td>_ga</td>
+                            <td>Analytics</td>
+                            <td>2 years</td>
+                            <td>Google Analytics - Used to distinguish users</td>
+                        </tr>
+                        <tr>
+                            <td>_gid</td>
+                            <td>Analytics</td>
+                            <td>24 hours</td>
+                            <td>Google Analytics - Used to distinguish users</td>
+                        </tr>
+                        <tr>
+                            <td>fbp</td>
+                            <td>Advertising</td>
+                            <td>3 months</td>
+                            <td>Facebook Pixel - Used for advertising measurement</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <section>
+                <h2>How to Control Cookies</h2>
+                <p>You can control and/or delete cookies as you wish. You can delete all cookies that are already on your device and you can set most browsers to prevent them from being placed. However, if you do this, you may have to manually adjust some preferences every time you visit a site and some services and functionalities may not work.</p>
+                
+                <p>You can control your cookie preferences in the following ways:</p>
+                
+                <h3>Browser Settings</h3>
+                <p>Most web browsers allow you to manage your cookie preferences. You can set your browser to refuse cookies, or to alert you when cookies are being sent. The methods for doing so vary from browser to browser, and from version to version.</p>
+                
+                <p>You can generally find these settings in the 'Options' or 'Preferences' menu of your browser. The following links provide information on how to modify cookie settings in the most popular browsers:</p>
+                
+                <ul>
+                    <li><a href="https://support.google.com/chrome/answer/95647">Google Chrome</a></li>
+                    <li><a href="https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer">Mozilla Firefox</a></li>
+                    <li><a href="https://support.microsoft.com/en-us/windows/microsoft-edge-browsing-data-and-privacy-bb8174ba-9d73-dcf2-9b4a-c582b4e640dd">Microsoft Edge</a></li>
+                    <li><a href="https://support.apple.com/en-us/HT201265">Safari</a></li>
+                </ul>
+                
+                <h3>Platform Settings</h3>
+                <p>You can also manage your cookie preferences directly on our Platform by clicking the "Cookie Settings" button at the top of this page.</p>
+                
+                <h3>Third-Party Opt-Out</h3>
+                <p>For cookies served by third parties, you can also opt out of some of these cookies by visiting the Network Advertising Initiative's opt-out website at <a href="http://optout.networkadvertising.org">http://optout.networkadvertising.org</a> or the Digital Advertising Alliance's opt-out website at <a href="http://optout.aboutads.info">http://optout.aboutads.info</a>.</p>
+            </section>
+            
+            <section>
+                <h2>Data Protection and Privacy</h2>
+                <p>For more information about how we protect your personal data, please refer to our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+                <p>If you have any questions or concerns about our use of cookies or this Cookie Policy, please contact us at <a href="mailto:privacy@neighborhoodconnect.com">privacy@neighborhoodconnect.com</a>.</p>
+            </section>
+            
+            <section>
+                <h2>Changes to This Cookie Policy</h2>
+                <p>We may update this Cookie Policy from time to time in order to reflect changes to the cookies we use or for other operational, legal, or regulatory reasons. Please therefore re-visit this Cookie Policy regularly to stay informed about our use of cookies and related technologies.</p>
+                <p>The date at the top of this Cookie Policy indicates when it was last updated.</p>
+            </section>
+            
+            <div class="cookie-preferences">
+                <h3>Update Your Cookie Preferences</h3>
+                <p>You can change your cookie preferences at any time by clicking the button below.</p>
+                <button id="cookie-preferences-update-btn" class="button">Update Cookie Settings</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Neighborhood Connect. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="cookie.html">Cookie Policy</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Cookie preferences modal functionality
+        document.getElementById('cookie-preferences-btn').addEventListener('click', function() {
+            // Show cookie preferences modal
+            alert('Cookie preferences modal would open here');
+        });
+        
+        document.getElementById('cookie-preferences-update-btn').addEventListener('click', function() {
+            // Show cookie preferences modal
+            alert('Cookie preferences modal would open here');
+        });
+    </script>
+</body>
+</html>

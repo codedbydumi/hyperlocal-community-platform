@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Neighborhood Connect</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: #3267d6;
+            text-decoration: none;
+        }
+        
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background-color: #f2f3f5;
+            border-radius: 24px;
+            padding: 8px 16px;
+            width: 40%;
+        }
+        
+        .search-bar input {
+            border: none;
+            background-color: transparent;
+            outline: none;
+            width: 100%;
+            padding: 5px;
+        }
+        
+        .search-bar i {
+            color: #666;
+            margin-right: 10px;
+        }
+        
+        .add-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .login-btn {
+            background-color: #3267d6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        
+        /* Main Content */
+        .hero-section {
+            background-color: #3267d6;
+            color: white;
+            padding: 40px 50px;
+            text-align: center;
+        }
+        
+        .hero-section h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .hero-section p {
+            font-size: 16px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .terms-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 50px;
+            background-color: white;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            margin-top: -20px;
+            margin-bottom: 50px;
+        }
+        
+        .terms-content h2 {
+            color: #3267d6;
+            margin: 30px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .terms-content p, .terms-content ul {
+            margin-bottom: 15px;
+        }
+        
+        .terms-content ul {
+            margin-left: 20px;
+        }
+        
+        .terms-content .last-updated {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        .terms-nav {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .terms-nav h3 {
+            margin-bottom: 15px;
+            color: #3267d6;
+        }
+        
+        .terms-nav ul {
+            list-style: none;
+        }
+        
+        .terms-nav ul li {
+            margin-bottom: 10px;
+        }
+        
+        .terms-nav ul li a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            padding: 5px 0;
+            transition: color 0.3s;
+        }
+        
+        .terms-nav ul li a:hover {
+            color: #3267d6;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #3267d6;
+            color: white;
+            text-align: center;
+            padding: 30px 50px;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        
+        .footer-links a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        
+        .copyright {
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 15px;
+            }
+            
+            .search-bar {
+                width: 100%;
+                margin: 15px 0;
+            }
+            
+            nav ul {
+                margin: 15px 0;
+            }
+            
+            .terms-content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.php" class="logo">Hyperlocal</a>
+        <div class="search-container">
+            
+            <span class="mic-icon"></span>
+            <span class="plus-icon"></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="rented_item.php">rent Item</a></li>
+                <li><a href="viewgroups.php">Community</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1>Terms of Service</h1>
+        <p>Please read these terms carefully before using Neighborhood Connect</p>
+    </section>
+
+    <!-- Main Content -->
+    <div class="terms-content">
+        <p class="last-updated">Last Updated: March 1, 2025</p>
+
+        <div class="terms-nav">
+            <h3>Table of Contents</h3>
+            <ul>
+                <li><a href="#acceptance">1. Acceptance of Terms</a></li>
+                <li><a href="#eligibility">2. Eligibility</a></li>
+                <li><a href="#accounts">3. User Accounts</a></li>
+                <li><a href="#content">4. User Content</a></li>
+                <li><a href="#rentals">5. Rental Terms</a></li>
+                <li><a href="#payments">6. Payments and Fees</a></li>
+                <li><a href="#liability">7. Limitation of Liability</a></li>
+                <li><a href="#disputes">8. Dispute Resolution</a></li>
+                <li><a href="#privacy">9. Privacy Policy</a></li>
+                <li><a href="#termination">10. Termination</a></li>
+                <li><a href="#modifications">11. Modifications to Terms</a></li>
+                <li><a href="#contact">12. Contact Us</a></li>
+            </ul>
+        </div>
+
+        <h2 id="acceptance">1. Acceptance of Terms</h2>
+        <p>By accessing or using the Neighborhood Connect platform, including our website, mobile application, and services (collectively, the "Platform"), you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing the Platform.</p>
+        
+        <h2 id="eligibility">2. Eligibility</h2>
+        <p>To use our Platform, you must be at least 18 years old and capable of forming a binding contract. By using our Platform, you represent and warrant that you meet these requirements.</p>
+        
+        <h2 id="accounts">3. User Accounts</h2>
+        <p>When you create an account on our Platform, you agree to provide accurate, current, and complete information. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.</p>
+        <p>You agree to:</p>
+        <ul>
+            <li>Create only one account for personal use</li>
+            <li>Not share your account with any third party</li>
+            <li>Notify us immediately of any unauthorized use of your account</li>
+            <li>Keep your contact and billing information up to date</li>
+        </ul>
+        <p>We reserve the right to disable any user account at our discretion, especially in cases of suspected fraudulent or inappropriate activity.</p>
+        
+        <h2 id="content">4. User Content</h2>
+        <p>When you post content on our Platform, including item listings, community forum posts, and reviews, you retain ownership of your content but grant us a non-exclusive, worldwide, royalty-free license to use, reproduce, and display such content in connection with our services.</p>
+        <p>You are solely responsible for the content you post and agree not to post content that:</p>
+        <ul>
+            <li>Is false, misleading, or deceptive</li>
+            <li>Infringes on any third-party rights</li>
+            <li>Is defamatory, obscene, or offensive</li>
+            <li>Promotes illegal activities or violates any laws</li>
+            <li>Contains malware, viruses, or other harmful code</li>
+        </ul>
+        <p>We may remove any content that violates these terms or that we find objectionable.</p>
+        
+        <h2 id="rentals">5. Rental Terms</h2>
+        <p>Neighborhood Connect facilitates peer-to-peer rentals of tools, equipment, and other items between users. We do not own, possess, or control the items listed for rent on our Platform.</p>
+        <p><strong>For Lenders:</strong></p>
+        <ul>
+            <li>You agree to provide accurate descriptions and images of your items</li>
+            <li>You represent that you have the legal right to rent out the listed items</li>
+            <li>You are responsible for ensuring your items are in good working condition and safe to use</li>
+            <li>You may set your own rental rates and availability</li>
+        </ul>
+        <p><strong>For Borrowers:</strong></p>
+        <ul>
+            <li>You agree to use rented items for their intended purpose and in accordance with any instructions provided</li>
+            <li>You are responsible for returning items in the same condition they were received, normal wear and tear excepted</li>
+            <li>You may be liable for damage, loss, or theft of rented items</li>
+        </ul>
+        
+        <h2 id="payments">6. Payments and Fees</h2>
+        <p>All payments on our Platform are processed through our secure payment system. When you make a payment, you agree to provide accurate and complete payment information.</p>
+        <p>Our fee structure is as follows:</p>
+        <ul>
+            <li>Borrowers pay the listed rental rate plus applicable service fees</li>
+            <li>Lenders receive the listed rental rate minus applicable service fees</li>
+            <li>Service fees are calculated as a percentage of the rental rate and are disclosed at checkout</li>
+        </ul>
+        <p>We may change our fee structure at any time with prior notice to users.</p>
+        
+        <h2 id="liability">7. Limitation of Liability</h2>
+        <p>To the maximum extent permitted by law, Neighborhood Connect shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to, damages for loss of profits, goodwill, use, data, or other intangible losses.</p>
+        <p>We do not guarantee the accuracy, completeness, or reliability of any content posted by users. We are not responsible for any damage, loss, or injury resulting from your use of items rented through our Platform.</p>
+        
+        <h2 id="disputes">8. Dispute Resolution</h2>
+        <p>If a dispute arises between users, we encourage you to first attempt to resolve the issue directly. If that fails, you may use our dispute resolution process, which includes:</p>
+        <ul>
+            <li>Submitting a formal complaint through our Platform</li>
+            <li>Providing evidence to support your claim</li>
+            <li>Participating in good faith in our mediation process</li>
+        </ul>
+        <p>We will review the evidence and make a determination based on our policies. Our decision is final in matters related to our Platform services.</p>
+        
+        <h2 id="privacy">9. Privacy Policy</h2>
+        <p>Your privacy is important to us. Our Privacy Policy, which is incorporated into these Terms of Service, describes how we collect, use, and disclose information about you. By using our Platform, you consent to the collection and use of information as described in our Privacy Policy.</p>
+        
+        <h2 id="termination">10. Termination</h2>
+        <p>We may terminate or suspend your account and access to our Platform immediately, without prior notice or liability, for any reason, including but not limited to, a breach of these Terms of Service.</p>
+        <p>Upon termination, your right to use the Platform will immediately cease. If you wish to terminate your account, you may simply discontinue using the Platform or contact us to request account deletion.</p>
+        
+        <h2 id="modifications">11. Modifications to Terms</h2>
+        <p>We reserve the right to modify these Terms of Service at any time. We will provide notice of significant changes by updating the "Last Updated" date at the top of these terms and by placing a notice on our website. Your continued use of the Platform after such modifications constitutes your acceptance of the revised terms.</p>
+        
+        <h2 id="contact">12. Contact Us</h2>
+        <p>If you have any questions about these Terms of Service, please contact us at:</p>
+        <p>Email: support@neighborhoodconnect.com</p>
+        <p>Phone: +94 11 2345678</p>
+        <p>Address: 123 Community Lane, Colombo 05, Sri Lanka</p>
+    </div>
+
+    <!-- Footer -->
+ 
+    <footer>
+        <p>Join Our Community Today</p>
+        <button style="background-color: #FF9933; color: white; border: none; padding: 10px 20px; border-radius: 20px; font-weight: bold; margin-top: 15px; cursor: pointer;">Sign Up Now</button>
+        
+        <div class="footer-links">
+            <a href="index.php">Home</a>
+            <a href="privacy.html">Privacy Policy</a>
+         
+            <a href="help.html">Help</a>
+        </div>
+        
+        <p style="margin-top: 20px; font-size: 14px;">© 2025 Neighborhood Connect</p>
+    </footer>
+
+    <script>
+        // Simple JavaScript for interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Login button functionality
+            const loginBtn = document.querySelector('.login-btn');
+            loginBtn.addEventListener('click', function() {
+                window.location.href = 'login.html';
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('.terms-nav a').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Search functionality placeholder
+            const searchInput = document.querySelector('.search-bar input');
+            searchInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    alert('Search functionality would go here in the full implementation!');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

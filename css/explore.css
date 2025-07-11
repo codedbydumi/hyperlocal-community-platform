@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+}
+
+.sidebar {
+    width: 280px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group select, .form-group button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #ecf0f1;
+}
+
+.form-group button {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #2980b9;
+}
+
+.main-content {
+    margin-left: 280px;
+    padding: 20px;
+    width: calc(100% - 280px);
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #333;
+}
+
+/* Listings Grid */
+.listings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Listing Item Card */
+.listing-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.listing-item h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.listing-item p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.listing-item .view-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.listing-item .view-button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .listings-grid {
+        grid-template-columns: 1fr; /* Single column for small screens */
+    }
+}

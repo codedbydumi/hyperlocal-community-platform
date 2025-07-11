@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Guidelines | Neighborhood Connect</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .logo {
+            font-weight: 700;
+            color: #3366cc;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .search-container {
+            display: flex;
+            flex-grow: 1;
+            max-width: 500px;
+            margin: 0 20px;
+            position: relative;
+        }
+        .search-container input {
+            width: 100%;
+            padding: 10px 15px;
+            border-radius: 20px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+            background-color: #f5f5f5;
+        }
+        .search-container .mic-icon, .search-container .plus-icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #777;
+            cursor: pointer;
+        }
+        .search-container .plus-icon {
+            right: -30px;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 25px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        .login-btn {
+            background-color: #3366cc;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .guidelines-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        h1 {
+            color: #3366cc;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #3366cc;
+            margin: 30px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        .guideline-section {
+            margin-bottom: 30px;
+        }
+        
+        .important-note {
+            background-color: #f0f5ff;
+            padding: 15px;
+            border-left: 4px solid #3366cc;
+            margin-bottom: 20px;
+        }
+        
+        .report-section {
+            background-color: #f0f5ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 40px;
+            text-align: center;
+        }
+        
+        .report-button {
+            display: inline-block;
+            background-color: #3366cc;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 15px;
+        }
+        
+        footer {
+            background-color: #3366cc;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 60px;
+        }
+        
+        footer .footer-links {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        footer .footer-links a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        
+        footer .footer-links a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 15px;
+            }
+            
+            .search-container {
+                margin: 15px 0;
+                max-width: 100%;
+            }
+            
+            nav ul {
+                margin-top: 15px;
+                width: 100%;
+                justify-content: space-between;
+            }
+            
+            nav ul li {
+                margin: 0;
+            }
+            
+            .guidelines-container {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.php" class="logo">Hyperlocal</a>
+        <div class="search-container">
+            <input type="text" placeholder="Search for tools, skills or community help...">
+            <span class="mic-icon"></span>
+            <span class="plus-icon"></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="rented_item.php">rent Item</a></li>
+                <li><a href="viewgroups.php">Community</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="guidelines-container">
+            <h1>Community Guidelines</h1>
+            
+            <div class="important-note">
+                <p>Welcome to Neighborhood Connect! Our community guidelines are designed to make our platform a safe, respectful, and helpful space for everyone. By joining our community, you agree to follow these guidelines in all your interactions.</p>
+            </div>
+            
+            <div class="guideline-section">
+                <h2>Our Core Values</h2>
+                <p>At Neighborhood Connect, we believe in:</p>
+                <ul>
+                    <li><strong>Respect:</strong> Treat all community members with kindness and consideration.</li>
+                    <li><strong>Trust:</strong> Build relationships based on honesty and reliability.</li>
+                    <li><strong>Helpfulness:</strong> Support your neighbors and contribute positively to the community.</li>
+                    <li><strong>Inclusivity:</strong> Welcome and respect people of all backgrounds and identities.</li>
+                    <li><strong>Responsibility:</strong> Take care of borrowed items and follow through on commitments.</li>
+                </ul>
+            </div>
+            
+            <div class="guideline-section">
+                <h2>General Conduct</h2>
+                <ol>
+                    <li><strong>Be respectful and courteous</strong> in all interactions, both online and in person.</li>
+                    <li><strong>Communicate clearly</strong> about expectations, timelines, and any issues that arise.</li>
+                    <li><strong>Honor your commitments</strong> whether you're lending an item, providing a service, or attending an event.</li>
+                    <li><strong>Respond promptly</strong> to messages and requests from other community members.</li>
+                    <li><strong>Provide honest feedback</strong> through reviews and ratings to help maintain community quality.</li>
+                </ol>
+            </div>
+            
+            <div class="guideline-section">
+                <h2>Items & Rentals</h2>
+                <ol>
+                    <li><strong>Provide accurate descriptions</strong> of items you're offering for rent, including condition and any limitations.</li>
+                    <li><strong>Return items on time</strong> and in the same condition you received them.</li>
+                    <li><strong>Report any damage</strong> promptly and honestly, and be prepared to cover repair or replacement costs if you caused damage.</li>
+                    <li><strong>Clean items before returning</strong> them to show respect for the owner and future borrowers.</li>
+                    <li><strong>Only list items that you own</strong> or have permission to rent out.</li>
+                </ol>
+            </div>
+            
+            <div class="guideline-section">
+                <h2>Services</h2>
+                <ol>
+                    <li><strong>Be honest about your skills and qualifications</strong> when offering services.</li>
+                    <li><strong>Provide services as described</strong> and communicate promptly if you encounter any issues.</li>
+                    <li><strong>Set clear expectations</strong> about pricing, timeline, and scope of work.</li>
+                    <li><strong>Respect privacy and property</strong> when providing services in someone's home.</li>
+                    <li><strong>Follow through on agreements</strong> and maintain professional standards.</li>
+                </ol>
+            </div>
+            
+            <div class="guideline-section">
+                <h2>Community Discussions & Events</h2>
+                <ol>
+                    <li><strong>Stay on topic</strong> in forum discussions and community threads.</li>
+                    <li><strong>Be constructive</strong> in your comments and feedback.</li>
+                    <li><strong>Avoid controversial topics</strong> such as politics or religion unless in appropriate designated forums.</li>
+                    <li><strong>Respect diverse viewpoints</strong> even when you disagree.</li>
+                    <li><strong>Keep event descriptions accurate</strong> and notify attendees of any changes.</li>
+                </ol>
+            </div>
+            
+            <div class="guideline-section">
+                <h2>Prohibited Behavior</h2>
+                <p>The following behaviors are not tolerated on Neighborhood Connect:</p>
+                <ul>
+                    <li><strong>Harassment or bullying</strong> of any kind, including offensive comments about race, gender, religion, or other personal characteristics.</li>
+                    <li><strong>Hate speech</strong> or discriminatory language.</li>
+                    <li><strong>Threatening or violent language</strong> directed at any community member.</li>
+                    <li><strong>Spam or commercial solicitation</strong> outside of appropriate marketplace sections.</li>
+                    <li><strong>Sharing illegal content</strong> or promoting illegal activities.</li>
+                    <li><strong>Creating multiple accounts</strong> to manipulate ratings or circumvent guidelines.</li>
+                    <li><strong>Violating others' privacy</strong> by sharing personal information without consent.</li>
+                </ul>
+            </div>
+            
+            <div class="guideline-section">
+                <h2>Safety Guidelines</h2>
+                <p>To ensure your safety when using Neighborhood Connect:</p>
+                <ul>
+                    <li><strong>Meet in public places</strong> for initial exchanges when possible.</li>
+                    <li><strong>Let someone know</strong> when you're meeting a new community member.</li>
+                    <li><strong>Trust your instincts</strong> and leave any situation that feels unsafe.</li>
+                    <li><strong>Verify identities</strong> through our platform before meeting in person.</li>
+                    <li><strong>Inspect items carefully</strong> before renting or borrowing to document their condition.</li>
+                    <li><strong>Keep all communication</strong> on the platform until you've established trust.</li>
+                </ul>
+            </div>
+            
+            <div class="guideline-section">
+                <h2>Conflict Resolution</h2>
+                <p>If you encounter an issue with another community member:</p>
+                <ol>
+                    <li><strong>Communicate directly</strong> with the other person first to try resolving the issue.</li>
+                    <li><strong>Stay calm and respectful</strong> even when frustrated.</li>
+                    <li><strong>Focus on solutions</strong> rather than blame.</li>
+                    <li><strong>Document relevant information</strong> including messages and photos if applicable.</li>
+                    <li><strong>If direct communication doesn't work</strong>, use our dispute resolution process through Support.</li>
+                </ol>
+            </div>
+            
+            <div class="guideline-section">
+                <h2>Consequences for Violations</h2>
+                <p>Violations of these guidelines may result in:</p>
+                <ul>
+                    <li>Warnings or temporary restrictions on account features</li>
+                    <li>Removal of content that violates guidelines</li>
+                    <li>Temporary suspension of account privileges</li>
+                    <li>Permanent ban from the platform in severe cases</li>
+                </ul>
+                <p>Our moderation team reviews reported violations on a case-by-case basis and makes decisions based on the severity and pattern of behavior.</p>
+            </div>
+            
+            <div class="report-section">
+                <h2>Reporting Violations</h2>
+                <p>If you notice content or behavior that violates these guidelines, please report it immediately using the "Report" feature or by contacting our Support team.</p>
+                <p>We take all reports seriously and will investigate promptly.</p>
+                <a href="contact.html" class="report-button">Contact Support</a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Join Our Community Today</p>
+        <button style="background-color: #FF9933; color: white; border: none; padding: 10px 20px; border-radius: 20px; font-weight: bold; margin-top: 15px; cursor: pointer;">Sign Up Now</button>
+        
+        <div class="footer-links">
+            <a href="index.php">Home</a>
+            <a href="privacy.html">Privacy Policy</a>
+         
+            <a href="help.html">Help</a>
+        </div>
+        
+        <p style="margin-top: 20px; font-size: 14px;">© 2025 Neighborhood Connect</p>
+    </footer>
+
+    <script>
+        // Add smooth scrolling to anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

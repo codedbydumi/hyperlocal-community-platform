@@ -1,0 +1,127 @@
+/* Modern Registration Form CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    padding: 40px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .container:hover {
+    transform: translateY(-5px);
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  
+  h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #4e73df;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+    font-weight: 500;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #4e73df;
+    box-shadow: 0 0 0 2px rgba(78, 115, 223, 0.25);
+    outline: none;
+  }
+  
+  button {
+    background-color: #4e73df;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 15px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #3a5bcc;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(78, 115, 223, 0.3);
+  }
+  
+  button:active {
+    transform: translateY(1px);
+  }
+  
+  p {
+    margin-top: 20px;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  a {
+    color: #4e73df;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #3a5bcc;
+    text-decoration: underline;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    .container {
+      width: 90%;
+      padding: 30px 20px;
+    }
+  }

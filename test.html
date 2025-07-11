@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Neighborhood</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <div class="container signup-container">
+        <div class="login-box signup-box">
+            <div class="login-header">
+                <h1>Neighborhood</h1>
+                <p>Create an account to connect with your community.</p>
+            </div>
+            
+            <?php if (!empty($errors)): ?>
+                <div class="error-message">
+                    <?php foreach ($errors as $error): ?>
+                        <p><?php echo $error; ?></p>
+                    <?php endforeach; ?>
+                </div>
+            <?php endif; ?>
+            
+            <form id="signup-form" method="POST" action="signup.php">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" required value="<?php echo isset($first_name) ? $first_name : ''; ?>">
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required value="<?php echo isset($last_name) ? $last_name : ''; ?>">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required value="<?php echo isset($email) ? $email : ''; ?>">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <div class="form-options">
+                    <div class="remember-me">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                    </div>
+                </div>
+                <button type="submit" class="btn-primary">Create Account</button>
+            </form>
+            <div class="login-footer">
+                <p>Already have an account? <a href="login.php">Login</a></p>
+            </div>
+        </div>
+        <div class="login-image">
+            <img src="neighborhood-illustration.svg" alt="Neighborhood community illustration">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

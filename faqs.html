@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions | Neighborhood Connect</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .logo {
+            font-weight: 700;
+            color: #3366cc;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .search-container {
+            display: flex;
+            flex-grow: 1;
+            max-width: 500px;
+            margin: 0 20px;
+            position: relative;
+        }
+        .search-container input {
+            width: 100%;
+            padding: 10px 15px;
+            border-radius: 20px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+            background-color: #f5f5f5;
+        }
+        .search-container .mic-icon, .search-container .plus-icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #777;
+            cursor: pointer;
+        }
+        .search-container .plus-icon {
+            right: -30px;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 25px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        .login-btn {
+            background-color: #3366cc;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .faq-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 28px;
+            text-align: center;
+        }
+        
+        .search-faq {
+            display: flex;
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+        
+        .search-faq input {
+            flex-grow: 1;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px 0 0 5px;
+            font-size: 16px;
+        }
+        
+        .search-faq button {
+            background-color: #3366cc;
+            color: white;
+            border: none;
+            padding: 0 20px;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+        
+        .faq-categories {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .faq-category {
+            padding: 8px 15px;
+            background-color: #f0f5ff;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .faq-category:hover, .faq-category.active {
+            background-color: #3366cc;
+            color: white;
+        }
+        
+        .faq-section {
+            margin-bottom: 40px;
+        }
+        
+        .faq-section h2 {
+            color: #3366cc;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .faq-item {
+            margin-bottom: 15px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 15px 20px;
+            background-color: #f9f9f9;
+            cursor: pointer;
+            font-weight: 500;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-question::after {
+            content: '+';
+            font-size: 20px;
+            color: #3366cc;
+        }
+        
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 15px 20px;
+            max-height: 500px;
+        }
+        
+        .support-cta {
+            text-align: center;
+            margin-top: 40px;
+            padding: 30px;
+            background-color: #f0f5ff;
+            border-radius: 10px;
+        }
+        
+        .support-cta h2 {
+            color: #3366cc;
+            margin-bottom: 15px;
+        }
+        
+        .support-button {
+            display: inline-block;
+            background-color: #3366cc;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 15px;
+        }
+        
+        footer {
+            background-color: #3366cc;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 60px;
+        }
+        
+        footer .footer-links {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        footer .footer-links a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        
+        footer .footer-links a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 15px;
+            }
+            
+            .search-container {
+                margin: 15px 0;
+                max-width: 100%;
+            }
+            
+            nav ul {
+                margin-top: 15px;
+                width: 100%;
+                justify-content: space-between;
+            }
+            
+            nav ul li {
+                margin: 0;
+            }
+            
+            .faq-container {
+                padding: 25px;
+            }
+            
+            .faq-categories {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.php" class="logo">Hyperlocal</a>
+        <div class="search-container">
+            <input type="text" placeholder="Search for tools, skills or community help...">
+            <span class="mic-icon"></span>
+            <span class="plus-icon"></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="rented_item.php">rent Item</a></li>
+                <li><a href="viewgroups.php">Community</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="faq-container">
+            <h1>Frequently Asked Questions</h1>
+            
+            <div class="search-faq">
+                <input type="text" placeholder="Search for answers...">
+                <button>Search</button>
+            </div>
+            
+            <div class="faq-categories">
+                <div class="faq-category active">All</div>
+                <div class="faq-category">Account</div>
+                <div class="faq-category">Items & Rentals</div>
+                <div class="faq-category">Services</div>
+                <div class="faq-category">Community</div>
+                <div class="faq-category">Payments</div>
+                <div class="faq-category">Safety</div>
+            </div>
+            
+            <div class="faq-section">
+                <h2>Account & Registration</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I create an account?</div>
+                    <div class="faq-answer">
+                        <p>Creating an account is simple! Click the "Login" button at the top right of the page, then select "Sign Up" on the login screen. Fill in your details including your name, email address, and create a password. You'll need to verify your email address before you can start using all features of Neighborhood Connect.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I reset my password?</div>
+                    <div class="faq-answer">
+                        <p>If you've forgotten your password, click the "Login" button, then select "Forgot Password" on the login screen. Enter the email address associated with your account, and we'll send you instructions to reset your password. Follow the link in the email to create a new password.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I edit my profile?</div>
+                    <div class="faq-answer">
+                        <p>Once logged in, click on your profile picture or name in the top right corner of the page. Select "My Profile" from the dropdown menu. On your profile page, click the "Edit Profile" button to update your personal information, profile picture, and contact details.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-section">
+                <h2>Items & Rentals</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I list an item for rent?</div>
+                    <div class="faq-answer">
+                        <p>To list an item for rent, go to "Rent Items" in the main navigation, then click "List an Item" button. Fill in details about your item including title, description, rental price, and upload clear photos. You can set availability dates and specify pickup/delivery options. Once submitted, your item will be visible to users in your area.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I rent an item from someone?</div>
+                    <div class="faq-answer">
+                        <p>Browse available items in the "Rent Items" section or use the search function to find what you need. When you find an item you'd like to rent, click on it to view details. Select your desired rental dates and click "Request to Rent". The item owner will receive your request and can approve it. Once approved, you'll receive instructions for payment and pick-up/delivery.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What if an item is damaged during rental?</div>
+                    <div class="faq-answer">
+                        <p>If an item is damaged during rental, we recommend that both parties try to resolve the issue amicably first. Document the damage with photos and discuss fair compensation. If needed, our Support team can mediate the dispute. This is why we recommend both parties inspect and document the condition of items before and after rental.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I cancel a rental?</div>
+                    <div class="faq-answer">
+                        <p>To cancel a rental, go to "My Rentals" in your account dashboard. Find the rental you wish to cancel and click "Cancel Rental". Our cancellation policy varies depending on how far in advance you're canceling. If you cancel 48+ hours before the rental start time, you'll receive a full refund. If you cancel within 48 hours, you'll receive a 50% refund. No refunds are given after the rental has begun.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-section">
+                <h2>Services</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I offer my skills or services?</div>
+                    <div class="faq-answer">
+                        <p>To offer your skills or services, go to the "Services" section in the main navigation and click "Offer Skills." Create a detailed profile of the services you provide, including your experience, rates, and availability. You can specify your service radius and upload photos of your previous work if applicable. Once published, users in your area can find and request your services.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I find services in my area?</div>
+                    <div class="faq-answer">
+                        <p>Visit the "Services" section and browse through available categories or use the search function to find specific services. You can filter by location, rating, and price range. Click on a service provider to view their profile, ratings, and availability. Once you find someone suitable, you can contact them directly through our messaging system or request a booking.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I leave a review for a service provider?</div>
+                    <div class="faq-answer">
+                        <p>After a service has been completed, you'll receive a notification asking you to rate and review your experience. Alternatively, you can go to your "My Services" section, find the completed service, and click "Leave Review". Rate the provider on a scale of 1-5 stars and write a detailed review about your experience. Honest reviews help maintain quality in our community.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-section">
+                <h2>Community</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I join community discussions?</div>
+                    <div class="faq-answer">
+                        <p>To join community discussions, head to the "Community" section in the main navigation. You'll see various forums and discussion threads. Browse through topics that interest you or use the search function to find specific discussions. Click on a thread to read comments and reply, or start a new thread by clicking "New Discussion". Remember to follow our community guidelines for respectful interactions.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I create a community event?</div>
+                    <div class="faq-answer">
+                        <p>To create a community event, go to the "Community" section and click on "Events", then "Create Event". Fill in the event details including title, description, date, time, location, and any attendance requirements. You can upload an image for your event and specify whether it's public or for specific community members. Once published, your event will be visible in the community calendar.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How are neighborhoods defined on the platform?</div>
+                    <div class="faq-answer">
+                        <p>Neighborhoods are defined based on geographical proximity and local municipal boundaries. When you sign up, you'll be asked to provide your address, which helps us place you in the correct neighborhood. You can view and join multiple nearby neighborhoods if you wish. This allows you to access resources and connect with community members in your immediate area and surrounding areas.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-section">
+                <h2>Payments</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do payments work?</div>
+                    <div class="faq-answer">
+                        <p>When you rent an item or book a service, payment is securely processed through our platform. We accept major credit/debit cards and online payment methods. The payment is held until the rental or service is complete, ensuring both parties are protected. After the rental period ends or the service is completed satisfactorily, the payment is released to the provider minus our small service fee.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I add a payment method?</div>
+                    <div class="faq-answer">
+                        <p>To add a payment method, go to your account settings by clicking your profile picture or name in the top right corner. Select "Payment Methods" from the dropdown menu. Click "Add Payment Method" and choose between credit/debit card, PayPal, or other available options. Follow the prompts to enter your payment information. All payment information is securely encrypted and stored.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">When do I get paid for my rentals or services?</div>
+                    <div class="faq-answer">
+                        <p>For rentals, payment is released to you 24 hours after the rental period ends, provided there are no disputes. For services, payment is released 48 hours after the service is marked as complete. Funds are transferred to your linked bank account or payment method, which typically takes 2-3 business days to process. You can view your earnings and payment history in the "Earnings" section of your account.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-section">
+                <h2>Safety & Security</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Is it safe to rent items from other users?</div>
+                    <div class="faq-answer">
+                        <p>We take safety seriously at Neighborhood Connect. All users must verify their identity and contact information. We recommend checking user ratings and reviews before renting. Our secure payment system protects both parties, and our community guidelines ensure respectful interactions. If you ever feel uncomfortable, you can report users through our platform.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What safety precautions should I take when meeting someone?</div>
+                    <div class="faq-answer">
+                        <p>When meeting someone for the first time, we recommend the following safety precautions: Meet in a public place during daylight hours; bring a friend if possible; inform someone you trust about your meeting details; verify the person's identity through our platform; trust your instincts and leave if you feel uncomfortable; and keep communication through our platform for documentation purposes.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I report inappropriate behavior?</div>
+                    <div class="faq-answer">
+                        <p>If you encounter inappropriate behavior, you can report it by clicking the "Report" button on the user's profile or in the conversation. Provide as much detail as possible about the incident. Our support team will review the report promptly and take appropriate action. In case of emergency or immediate danger, please contact local authorities first, then report the incident to us.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Is my personal information secure?</div>
+                    <div class="faq-answer">
+                        <p>Yes, we take data security very seriously. Your personal information is encrypted and stored securely. We only share necessary information with other users to facilitate transactions and community interactions. We never sell your data to third parties. You can control your privacy settings in your account to determine what information is visible to others. For more details, please review our Privacy Policy.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="support-cta">
+                <h2>Can't Find What You're Looking For?</h2>
+                <p>Our support team is ready to help with any questions you might have.</p>
+                <a href="contact-us.html" class="support-button">Contact Support</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Join Our Community Today</p>
+        <button style="background-color: #FF9933; color: white; border: none; padding: 10px 20px; border-radius: 20px; font-weight: bold; margin-top: 15px; cursor: pointer;">Sign Up Now</button>
+        
+        <div class="footer-links">
+            <a href="index.php">Home</a>
+            <a href="privacy.html">Privacy Policy</a>
+         
+            <a href="help.html">Help</a>
+        </div>
+        
+        <p style="margin-top: 20px; font-size: 14px;">© 2025 Neighborhood Connect</p>
+
+
+    <script>
+        // Toggle FAQ items
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            
+            question.addEventListener('click', () => {
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+        
+        // Handle FAQ search
+        document.querySelector('.search-faq button').addEventListener('click', function() {
+            const searchTerm = document.querySelector('.search-faq input').value.toLowerCase();
+            
+            if (searchTerm) {
+                const faqItems = document.querySelectorAll('.faq-item');
+                let found = false;
+                
+                faqItems.forEach(item => {
+                    const questionText = item.querySelector('.faq-question').textContent.toLowerCase();
+                    const answerText = item.querySelector('.faq-answer').textContent.toLowerCase();
+                    
+                    if (questionText.includes(searchTerm) || answerText.includes(searchTerm)) {
+                        item.classList.add('active');
+                        item.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        found = true;
+                    } else {
+                        item.classList.remove('active');
+                    }
+                });
+                
+                if (!found) {
+                    alert('No results found. Please try different keywords or contact support.');
+                }
+            }
+        });
+        
+        // Category filtering
+        const categories = document.querySelectorAll('.faq-category');
+        
+        categories.forEach(category => {
+            category.addEventListener('click', () => {
+                // Remove active class from all categories
+                categories.forEach(cat => cat.classList.remove('active'));
+                
+                // Add active class to clicked category
+                category.classList.add('active');
+                
+                // Filter FAQ items based on category
+                // This is a simplified version. In a real implementation, you'd need to tag each FAQ item with categories.
+                const categoryText = category.textContent.toLowerCase();
+                
+                if (categoryText === 'all') {
+                    document.querySelectorAll('.faq-section').forEach(section => {
+                        section.style.display = 'block';
+                    });
+                } else {
+                    document.querySelectorAll('.faq-section').forEach(section => {
+                        const sectionTitle = section.querySelector('h2').textContent.toLowerCase();
+                        
+                        if (sectionTitle.includes(categoryText) || 
+                            (categoryText === 'items & rentals' && sectionTitle.includes('items')) ||
+                            (categoryText === 'safety' && sectionTitle.includes('safety'))) {
+                            section.style.display = 'block';
+                        } else {
+                            section.style.display = 'none';
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
