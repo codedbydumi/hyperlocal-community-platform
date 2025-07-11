@@ -847,28 +847,12 @@ $conn->close();
                 <h4>Explore</h4>
                 <ul>
                     <li><a href="index.php">Home</a></li>
-                    <li><a href="#browse">Browse Items</a></li>
-                    <li><a href="#services">Browse Services</a></li>
+                    <li><a href="explore.php">Browse Items</a></li>
+                    <li><a href="explore.php">Browse Services</a></li>
                     <li><a href="viewgroups.php">Community Groups</a></li>
                 </ul>
             </div>
-            <div class="footer-section">
-                <h4>Help</h4>
-                <ul>
-                    <li><a href="#faq">FAQs</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                    <li><a href="#support">Support Center</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Legal</h4>
-                <ul>
-                    <li><a href="#terms">Terms of Service</a></li>
-                    <li><a href="#privacy">Privacy Policy</a></li>
-                    <li><a href="#cookies">Cookie Policy</a></li>
-                    <li><a href="#guidelines">Community Guidelines</a></li>
-                </ul>
-            </div>
+        
             <div class="footer-section">
                 <h4>Connect</h4>
                 <ul>

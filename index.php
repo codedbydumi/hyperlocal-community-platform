@@ -58,7 +58,7 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Share. Connect. Save.</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <!-- Add Font Awesome for nice icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -432,7 +432,7 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
         <nav class="navbar">
             <div class="nav-left">
                 <a href="index.php" class="nav-logo">
-                    <img src="1.jpg" alt="Logo" class="logo">
+                    <img src="images/1.jpg" alt="Logo" class="logo">
                 </a>
                 <div class="search-container">
                     <input type="text" placeholder="Search for tools, skills or community help...">
@@ -495,7 +495,7 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
                 </div>
             </div>
             <div class="hero-image">
-                <img src="ll.jpg" alt="Community sharing illustration">
+                <img src="images/ll.jpg" alt="Community sharing illustration">
             </div>
         </section>
 
@@ -667,7 +667,7 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
             <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 40px;">
                 <!-- Footer Brand Section with Logo -->
                 <div style="flex: 0 0 100%; max-width: 350px; margin-bottom: 30px;">
-                    <img src="new.jpg" alt="Logo" class="footer-logo">
+                    <img src="images/new.jpg" alt="Logo" class="footer-logo">
                     <p style="margin-bottom: 20px; line-height: 1.6; color:rgb(255, 255, 255);">Connecting communities through sharing resources and skills.</p>
                     <div style="display: flex; gap: 15px;">
                         <a href="#" aria-label="Facebook" style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background-color: rgba(255, 255, 255, 0.1); color: #f5f7fa; transition: all 0.3s ease;"><i class="fab fa-facebook-f"></i></a>

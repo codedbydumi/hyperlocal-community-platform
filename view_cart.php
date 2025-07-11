@@ -3,7 +3,7 @@ session_start(); // Start the session to access cart items
 
 // Check if the cart is empty
 if (empty($_SESSION['cart'])) {
-    echo "<p>Your cart is empty.</p>";
+   
 } else {
     // Connect to the database
     $servername = "localhost";
@@ -344,7 +344,7 @@ if (empty($_SESSION['cart'])) {
         <div class="cart-summary">
             <h3>Order Summary</h3>
             <div class="total-amount">$<?php echo number_format($totalPrice, 2); ?></div>
-            <a href="#" class="checkout-btn">Proceed to Checkout</a>
+           
         </div>
     <?php endif; ?>
 </div>

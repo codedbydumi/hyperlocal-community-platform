@@ -677,7 +677,7 @@ $result = $conn->query($sql);
 <!-- Modern Header -->
 <header class="header">
     <div class="header-content">
-        <a href="#" class="logo">🏪 Marketplace</a>
+        <a href="index.php" class="logo">🏪 Marketplace</a>
         
         <!-- Search Bar in Header -->
         <div class="header-search">
@@ -967,7 +967,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <!-- Link to external JavaScript file for the existing voice-to-text functionality -->
-<script src="voiceToText.js"></script>
+<script src="js/voiceToText.js"></script>
 
 </body>
 </html>
