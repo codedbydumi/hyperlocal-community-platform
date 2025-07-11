@@ -82,7 +82,6 @@ LICENSE              → Open-source MIT license
    ```bash
    git clone https://github.com/yourusername/hyperlocal-community-platform.git
    cd hyperlocal-community-platform
-````
 
 2. **Set Up the Database**
 
