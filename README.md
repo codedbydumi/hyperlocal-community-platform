@@ -145,7 +145,9 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 👨‍💻 Author
 
-Made with ❤️ by **codedbydumi**
+Made with ❤️ by **codedbydumi** 
+
+---
 
 
 
