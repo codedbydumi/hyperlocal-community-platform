@@ -1,5 +1,4 @@
 
-```markdown
 # 🌐 Hyperlocal Community Platform
 
 <p align="center">
