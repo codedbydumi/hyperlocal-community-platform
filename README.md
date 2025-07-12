@@ -126,7 +126,7 @@ Screenshots of the platform are available in the `assets/` folder.
   </a>
 </p>
 
-### 📢 Community Feed *(Coming Soon)*
+### 📢 Community Feed 
 <p align="center">
   <a href="assets/community-feed.png" target="_blank">
     <img src="assets/community-feed.png" alt="Community Feed Coming Soon" width="800"/>
