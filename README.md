@@ -95,7 +95,7 @@ LICENSE            # License info
 
 Below are key UI screens from the platform. All images are stored in the `assets/` folder.
 
-<Detail>
+<Details>
 <summary>📌 Click to view sample UI screens</summary>
 
 ### 🏠 Home Page
@@ -134,7 +134,7 @@ Below are key UI screens from the platform. All images are stored in the `assets
 </p>
 
 
-</Detail>
+</Details>
 
 
 ---
