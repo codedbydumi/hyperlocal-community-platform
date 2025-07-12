@@ -108,7 +108,7 @@ Below are key UI screens from the platform. All images are stored in the `assets
 ### 📋 Item Listing Page
 <p align="center">
   <a href="assets/item-listing.png" target="_blank">
-    <img src="assets/item-listing.png" alt="Item Listing Page" width="600" height = "800px"/>
+    <img src="assets/item-listing.png" alt="Item Listing Page" width="600" height = "600px" />
   </a>
 </p>
 
