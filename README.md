@@ -93,10 +93,8 @@ LICENSE            # License info
 
 ## 🖼️ Screenshots & Demo
 
-Screenshots of the platform are available in the `assets/` folder.
-
-### 📌 Sample Screens
-
+<details>
+<summary>📌 Click to view sample UI screens</summary>
 
 ### 🏠 Home Page
 <p align="center">
@@ -126,17 +124,21 @@ Screenshots of the platform are available in the `assets/` folder.
   </a>
 </p>
 
-### 📢 Community Feed 
+### 📢 Community Feed *(Coming Soon)*
 <p align="center">
   <a href="assets/community-feed.png" target="_blank">
     <img src="assets/community-feed.png" alt="Community Feed Coming Soon" width="800"/>
   </a>
 </p>
 
+> 🚧 *This feature is currently under development and will be available in a future update.*
+
+</details>
+
+---
 
 > 🖥️ **Live deployment**: **Coming Soon**
 
----
 
 ## 🧰 Tech Stack
 
