@@ -95,46 +95,46 @@ LICENSE            # License info
 
 Below are key UI screens from the platform. All images are stored in the `assets/` folder.
 
-
+<Detail>
 <summary>📌 Click to view sample UI screens</summary>
 
 ### 🏠 Home Page
 <p align="center">
   <a href="assets/homepage.png" target="_blank">
-    <img src="assets/homepage.png" alt="Home Page" width="600"/>
+    <img src="assets/homepage.png" alt="Home Page" width="800"/>
   </a>
 </p>
 
 ### 📋 Item Listing Page
 <p align="center">
   <a href="assets/item-listing.png" target="_blank">
-    <img src="assets/item-listing.png" alt="Item Listing Page" width="600" height = "600px" />
+    <img src="assets/item-listing.png" alt="Item Listing Page" width="600" height = "800px" />
   </a>
 </p>
 
 ### 💬 Messaging Interface
 <p align="center">
   <a href="assets/chat.png" target="_blank">
-    <img src="assets/chat.png" alt="Messaging Interface" width="600"/>
+    <img src="assets/chat.png" alt="Messaging Interface" width="800"/>
   </a>
 </p>
 
 ### 🧹 Service Booking Page
 <p align="center">
   <a href="assets/booking.png" target="_blank">
-    <img src="assets/booking.png" alt="Service Booking Page" width="600"/>
+    <img src="assets/booking.png" alt="Service Booking Page" width="800"/>
   </a>
 </p>
 
 ### 📢 Community Feed 
 <p align="center">
   <a href="assets/community-feed.png" target="_blank">
-    <img src="assets/community-feed.png" alt="Community Feed Coming Soon" width="600"/>
+    <img src="assets/community-feed.png" alt="Community Feed Coming Soon" width="800"/>
   </a>
 </p>
 
 
-
+</Detail>
 
 
 ---
