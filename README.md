@@ -100,17 +100,41 @@ Screenshots of the platform are available in the `assets/` folder.
 * 🏠 **Home Page**
  [![Home Page](assets/homepage.png)](assets/homepage.png)
 
-* 📋 **Item Listing Page**
-  *(image: `assets/item-listing.png`)*
+### 🏠 Home Page
+<p align="center">
+  <a href="assets/homepage.png" target="_blank">
+    <img src="assets/homepage.png" alt="Home Page" width="800"/>
+  </a>
+</p>
 
-* 💬 **Messaging Interface**
-  *(image: `assets/chat.png`)*
+### 📋 Item Listing Page
+<p align="center">
+  <a href="assets/item-listing.png" target="_blank">
+    <img src="assets/item-listing.png" alt="Item Listing Page" width="800"/>
+  </a>
+</p>
 
-* 🧹 **Service Booking Page**
-  *(image: `assets/booking.png`)*
+### 💬 Messaging Interface
+<p align="center">
+  <a href="assets/chat.png" target="_blank">
+    <img src="assets/chat.png" alt="Messaging Interface" width="800"/>
+  </a>
+</p>
 
-* 📢 **Community Feed**
-  *(image: `assets/community-feed.png`)* // comming soon
+### 🧹 Service Booking Page
+<p align="center">
+  <a href="assets/booking.png" target="_blank">
+    <img src="assets/booking.png" alt="Service Booking Page" width="800"/>
+  </a>
+</p>
+
+### 📢 Community Feed *(Coming Soon)*
+<p align="center">
+  <a href="assets/community-feed.png" target="_blank">
+    <img src="assets/community-feed.png" alt="Community Feed Coming Soon" width="800"/>
+  </a>
+</p>
+
 
 > 🖥️ **Live deployment**: **Coming Soon**
 
