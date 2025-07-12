@@ -52,6 +52,16 @@ function getImagePath($row) {
     return null;
 }
 
+// Helper function to safely escape HTML - handles null values
+function safeHtmlspecialchars($value, $flags = ENT_QUOTES, $encoding = 'UTF-8') {
+    return htmlspecialchars($value ?? '', $flags, $encoding);
+}
+
+// Helper function to safely format numbers - handles null values
+function safeNumberFormat($value, $decimals = 2) {
+    return number_format($value ?? 0, $decimals);
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -331,10 +341,10 @@ function getImagePath($row) {
                         $imagePath = getImagePath($row);
                         if ($imagePath): 
                         ?>
-                            <img src="<?php echo htmlspecialchars($imagePath); ?>" 
-                                 alt="<?php echo htmlspecialchars($row['name']); ?>"
+                            <img src="<?php echo safeHtmlspecialchars($imagePath); ?>" 
+                                 alt="<?php echo safeHtmlspecialchars($row['name']); ?>"
                                  loading="lazy"
-                                 onerror="handleImageError(this, '<?php echo htmlspecialchars($imagePath); ?>')">
+                                 onerror="handleImageError(this, '<?php echo safeHtmlspecialchars($imagePath); ?>')">
                         <?php else: ?>
                             <div class="no-image">No Image Available</div>
                         <?php endif; ?>
@@ -343,22 +353,22 @@ function getImagePath($row) {
                     <div class="item-content">
                         <div class="item-header">
                             <div>
-                                <div class="item-name"><?php echo htmlspecialchars($row['name']); ?></div>
-                                <div class="item-type"><?php echo htmlspecialchars($row['item_type']); ?></div>
+                                <div class="item-name"><?php echo safeHtmlspecialchars($row['name']); ?></div>
+                                <div class="item-type"><?php echo safeHtmlspecialchars($row['item_type']); ?></div>
                             </div>
                         </div>
                         
                         <div class="price-tag">
-                            Rs. <?php echo number_format($row['price_per_day'], 2); ?>
+                            Rs. <?php echo safeNumberFormat($row['price_per_day']); ?>
                             <span>/day</span>
                         </div>
                         
                         <div class="item-details">
                             <div class="detail-item">
                                 <span class="detail-label">Quantity</span>
-                                <span class="detail-value"><?php echo htmlspecialchars($row['quantity']); ?> available</span>
+                                <span class="detail-value"><?php echo safeHtmlspecialchars($row['quantity']); ?> available</span>
                             </div>
-                            <?php if (isset($row['created_at'])): ?>
+                            <?php if (isset($row['created_at']) && !empty($row['created_at'])): ?>
                             <div class="detail-item">
                                 <span class="detail-label">Listed On</span>
                                 <span class="detail-value"><?php echo date('M d, Y', strtotime($row['created_at'])); ?></span>
@@ -367,12 +377,12 @@ function getImagePath($row) {
                         </div>
                         
                         <div class="location">
-                            📍 <?php echo htmlspecialchars($row['city']); ?>, <?php echo htmlspecialchars($row['district']); ?>
+                            📍 <?php echo safeHtmlspecialchars($row['city']); ?>, <?php echo safeHtmlspecialchars($row['district']); ?>
                         </div>
                         
                         <?php if (!empty($row['description'])): ?>
                             <div class="description">
-                                <?php echo nl2br(htmlspecialchars($row['description'])); ?>
+                                <?php echo nl2br(safeHtmlspecialchars($row['description'])); ?>
                             </div>
                         <?php endif; ?>
                     </div>
