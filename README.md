@@ -124,14 +124,14 @@ LICENSE            # License info
   </a>
 </p>
 
-### 📢 Community Feed *(Coming Soon)*
+### 📢 Community Feed 
 <p align="center">
   <a href="assets/community-feed.png" target="_blank">
     <img src="assets/community-feed.png" alt="Community Feed Coming Soon" width="800"/>
   </a>
 </p>
 
-> 🚧 *This feature is currently under development and will be available in a future update.*
+
 
 </details>
 
