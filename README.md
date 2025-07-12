@@ -101,7 +101,7 @@ Below are key UI screens from the platform. All images are stored in the `assets
 ### 🏠 Home Page
 <p align="center">
   <a href="assets/homepage.png" target="_blank">
-    <img src="assets/homepage.png" alt="Home Page" width="800"/>
+    <img src="assets/homepage.png" alt="Home Page" width="600"/>
   </a>
 </p>
 
