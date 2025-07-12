@@ -97,8 +97,6 @@ Screenshots of the platform are available in the `assets/` folder.
 
 ### 📌 Sample Screens
 
-* 🏠 **Home Page**
- [![Home Page](assets/homepage.png)](assets/homepage.png)
 
 ### 🏠 Home Page
 <p align="center">
