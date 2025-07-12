@@ -359,7 +359,7 @@ function safeNumberFormat($value, $decimals = 2) {
                         </div>
                         
                         <div class="price-tag">
-                            Rs. <?php echo safeNumberFormat($row['price_per_day']); ?>
+                            $ <?php echo safeNumberFormat($row['price_per_day']); ?>
                             <span>/day</span>
                         </div>
                         
